@@ -26,11 +26,11 @@ char	*ft_strchr(const char *str, int c)
 
 int	main(void)
 {
-	char teste [5] = "Hello";
+	char test [5] = "Hello";
 	int ch = '\0';
-	char *resultado;
+	char *result;
 
-	resultado = ft_strchr(teste,ch);
-	printf("%ṣ\n", resultado);
+	result = ft_strchr(test,ch);
+	printf("%ṣ\n", result);
 
 }

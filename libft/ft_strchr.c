@@ -12,12 +12,25 @@
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *str, int c)
 {
-
+	while (*str != (char)c)
+	{
+		if (*str == '\0')
+			return (NULL);
+		str++;
+	}
+	return ((char *)str);
 }
+
 
 int	main(void)
 {
+	char teste [5] = "Hello";
+	int ch = '\0';
+	char *resultado;
+
+	resultado = ft_strchr(teste,ch);
+	printf("%ṣ\n", resultado);
 
 }

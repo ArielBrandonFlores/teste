@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-int	ft_strlen(char *array)
+int	ft_strlen(const char *array)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (array[i])
@@ -22,8 +22,8 @@ int	ft_strlen(char *array)
 	return (i);
 }
 
-int	main(void)
-{
-	printf("%d\n", ft_strlen("42SP"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_strlen("42SP"));
+// 	return (0);
+// }

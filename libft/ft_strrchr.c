@@ -1,6 +1,6 @@
 #include"libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
@@ -14,7 +14,7 @@ char *ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-int main(void)
+int	main(void)
 {
 	const char	str[8] = "Hello 42";
 	int		ch = 'l';

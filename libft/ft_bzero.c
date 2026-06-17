@@ -24,7 +24,7 @@ void	ft_bzero(void *src, size_t n)
 int	main(void)
 {
 	char	src[15] = "Hello, World!!";
-
-	printf("%s\n", ft_bzero(src, 3));
+	ft_bzero(src, 3);
+	printf("%s\n", src);
 	return (0);
 }

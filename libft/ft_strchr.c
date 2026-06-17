@@ -32,5 +32,5 @@ int	main(void)
 
 	result = ft_strchr(test,ch);
 	printf("%ṣ\n", result);
-
+	return(0);
 }

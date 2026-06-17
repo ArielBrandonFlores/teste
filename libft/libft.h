@@ -21,10 +21,12 @@ int	ft_isdigit(int c);
 int	ft_isascii(int c);
 int	ft_isalpha(int c);
 int	ft_isalnum(int c);
-int	ft_strlen(char *array);
+int	ft_strlen(const char *array);
 void	ft_bzero(void *src, size_t n);
 void	*ft_memset(void *src, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+char	*ft_strchr(const char *str, int c);
+char	*strrchr(const char *s, int c);
 
 
 #endif

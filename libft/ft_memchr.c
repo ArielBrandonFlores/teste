@@ -1,11 +1,26 @@
 #include"libft.h"
 
-void	*memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
+	size_t			i;
+	unsigned char	*str;
 
+	i = 0;
+	str = (unsigned char *) s;
+	while (n > i)
+	{
+		if (str[i] == (unsigned char) c)
+			return(void *) (str + i);
+		i++;
+	}
+	return (NULL);
 }
 
 int	main(void)
 {
-
+	char *teste = ft_memchr("Hello42",'l', 8);
+	printf("%s\n",teste);
+	printf("%c\n",*teste);
+	printf("%c\n",teste[3]);
+	return (0);
 }

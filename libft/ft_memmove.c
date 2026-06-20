@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 11:34:29 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/04 13:59:25 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 10:17:15 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,24 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				i;
-	unsigned char		*d;
-	unsigned char		*s;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	d = (unsigned char *) dest;
-	s = (unsigned char *) src;
-	if (s == d || n == 0)
-		return (d);
-
-	if (d > s)
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	if (d == s || n == 0)
+		return (dest);
+	if (d < s)
 	{
-        i = n;
-		while (i > 0)
-		{
-			d[i - 1] = s[i - 1];
-			i--;
-		}
+		while (n--)
+			*d++ = *s++;
 	}
 	else
-	{
-		i = 0;
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
+	{	
+		d += n;
+		s += n;
+		while (n--)
+			*--d = *--s;
 	}
 	return (dest);
 }
@@ -50,6 +42,6 @@ int	main(void)
 	char		dest[12];
 
 	ft_memmove(dest, src, 6);
-    printf("%s\n", dest);
+	printf("%s\n", dest);
 	return (0);
 }

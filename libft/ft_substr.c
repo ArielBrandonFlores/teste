@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/20 10:35:03 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 10:35:04 by agiron-f         ###   ########.fr       */
+/*   Created: 2026/06/20 10:21:33 by agiron-f          #+#    #+#             */
+/*   Updated: 2026/06/20 11:41:50 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	unsigned char	*str1;
-	unsigned char	*str2;
+	char	*dest;
+	size_t	i;
 
+	dest = malloc(sizeof(char) * (len + 1));
+	if (!dest)
+		return (NULL);
 	i = 0;
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
-	while (i < n)
+	while (s[start + i] && len > i)
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		dest[i] = s[start + i];
 		i++;
 	}
-	return (0);
+	dest[i] = '\0';
+	return (dest);
 }

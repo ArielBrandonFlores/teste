@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 17:35:06 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/04 17:44:02 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 09:45:57 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,11 @@ char	*ft_strchr(const char *str, int c)
 	return ((char *)str);
 }
 
-
 int	main(void)
 {
-	char test [5] = "Hello";
-	int ch = '\0';
-	char *result;
+	char	test [5] = "Hello";
+	int		ch = '\0';
+	char	*result;
 
 	result = ft_strchr(test,ch);
 	printf("%ṣ\n", result);

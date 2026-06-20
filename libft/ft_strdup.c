@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 09:46:18 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 09:46:19 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 15:17:02 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 	char	*copy;
 
-	i = 0;
-	while (s[i])
-		i++;
+	i = ft_strlen(s);
 	if (!s)
 		return (NULL);
 	copy = (char *)malloc(sizeof(char) * (i + 1));

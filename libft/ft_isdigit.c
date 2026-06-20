@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:09:35 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/04 11:30:11 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 14:10:14 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,10 @@ int	main(void)
 	numero = '8';
 	if (ft_isdigit(numero))
 		printf("%c é um número.\n", numero);
-		
 	numero = 'b';
 	if (ft_isdigit(numero))
 		printf("%c é um número.\n", numero);
 	else
 		printf("%c não é um número.\n", numero);
-		
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 17:39:05 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 13:25:55 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 14:23:09 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,10 @@ char	*ft_strdup(const char *s);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+
 void	ft_bzero(void *src, size_t n);
 void	*calloc(size_t nmemb, size_t size);
 void	*ft_memset(void *src, int c, size_t n);
@@ -44,5 +46,4 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-char	*ft_strjoin(char const *s1, char const *s2);
 #endif

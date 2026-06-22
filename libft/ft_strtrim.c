@@ -1,26 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/20 13:34:57 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 15:26:31 by agiron-f         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/20 13:34:57 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 14:57:23 by agiron-f         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -34,12 +11,18 @@ int	ft_isset(char const *set, char c)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*dst;
-	int		begin;
-	int		end;
+	char	*begin;
+	char	*end;
 
-	begin = 0;
 	if (!s1 ||!set)
 		return (NULL);
-
+	begin = (char *)s1;
+	end = begin + ft_strlen(s1);
+	while (*begin && ft_isset(*begin, set))
+		++begin;
+	while (begin < end && ft_isset(*(end - 1), set))
+		--end;
+	end = ft_substr(begin, 0, end - begin);
+	return (end);
 }
 

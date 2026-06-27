@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 17:39:05 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 14:23:09 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/20 15:43:15 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char	*ft_strdup(const char *s);
+char	**ft_split(char const *s, char c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strjoin(char const *s1, char const *s2);

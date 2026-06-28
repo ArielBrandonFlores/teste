@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 11:34:29 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 10:17:15 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/28 14:09:49 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*d++ = *s++;
 	}
 	else
-	{	
+	{
 		d += n;
 		s += n;
 		while (n--)
@@ -36,12 +36,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void)
-{
-	const char	*src = "Hello World";
-	char		dest[12];
+// int	main(void)
+// {
+// 	const char	*src = "Hello World";
+// 	char		dest[12];
 
-	ft_memmove(dest, src, 6);
-	printf("%s\n", dest);
-	return (0);
-}
+// 	ft_memmove(dest, src, 6);
+// 	printf("%s\n", dest);
+// 	return (0);
+// }

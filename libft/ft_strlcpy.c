@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 13:04:27 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/04 15:04:16 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/28 14:11:09 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (i);
 }
 
-int	main(void)
-{
-	char	dst[5];
-	size_t	teste;
+// int	main(void)
+// {
+// 	char	dst[5];
+// 	size_t	teste;
 
-	teste = ft_strlcpy(dst, "Hello World", 0);
-	printf("Destino %s\n", dst);
-	printf("tamanho de src %zu\n", teste);
-	return (0);
-}
+// 	teste = ft_strlcpy(dst, "Hello World", 0);
+// 	printf("Destino %s\n", dst);
+// 	printf("tamanho de src %zu\n", teste);
+// 	return (0);
+// }

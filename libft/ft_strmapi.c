@@ -1,35 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/20 09:48:43 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/28 16:28:00 by agiron-f         ###   ########.fr       */
+/*   Created: 2026/06/28 12:17:10 by agiron-f          #+#    #+#             */
+/*   Updated: 2026/06/28 14:06:20 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
-{
-	size_t	i;
-	size_t	j;
+// char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+// {
+// 	if (s)
+// 	{
+// 		/* code */
+// 	}
 
-	if (!little)
-		return (big);
-	i = 0;
-	while (big[i] && i < len)
-	{
-		j = 0;
-		while (big[i + j] == little[j] && (i + j) < len)
-		{
-			if (little[j + 1] == '\0')
-				return ((char *)&big[i]);
-			j++;
-		}
-		i++;
-	}
-	return (NULL);
-}
+// }

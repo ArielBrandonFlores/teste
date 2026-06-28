@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:09:38 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/04 11:30:14 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/28 14:10:44 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d\n", ft_isprint(66));
-	printf("%d\n", ft_isprint(12));
-	printf("%d\n", ft_isprint(127));
-	printf("%d\n", ft_isprint(130));
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isprint(66));
+// 	printf("%d\n", ft_isprint(12));
+// 	printf("%d\n", ft_isprint(127));
+// 	printf("%d\n", ft_isprint(130));
+// }

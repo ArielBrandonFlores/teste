@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 15:38:32 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/27 16:54:16 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/28 14:04:44 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ char	**ft_split(char const *s, char c)
 				++s;
 			result[i++] = ft_substr(s - len, 0, len);
 		}
-		++s;
+			++s;
 	}
-	result[i] = '\0';
+	result[i] = NULL;
 	return (result);
 }

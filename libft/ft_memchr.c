@@ -6,7 +6,7 @@
 /*   By: agiron-f <agiron-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 10:34:23 by agiron-f          #+#    #+#             */
-/*   Updated: 2026/06/20 14:12:31 by agiron-f         ###   ########.fr       */
+/*   Updated: 2026/06/28 13:47:34 by agiron-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int	main(void)
-{
-	char	*teste;
+// int	main(void)
+// {
+// 	char	*teste;
 
-	*teste = ft_memchr ("Hello42", 'l', 8);
-	printf("%s\n", teste);
-	printf("%c\n", *teste);
-	printf("%c\n", teste[3]);
-	return (0);
-}
+// 	*teste = ft_memchr ("Hello42", 'l', 8);
+// 	printf("%s\n", teste);
+// 	printf("%c\n", *teste);
+// 	printf("%c\n", teste[3]);
+// 	return (0);
+// }
